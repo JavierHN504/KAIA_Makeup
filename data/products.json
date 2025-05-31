@@ -1,0 +1,200 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Base Matte Aqua",
+            "category": "rostro",
+            "price": 1200,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1631214524020-7e18db76a46f?w=300&h=300&fit=crop",
+            "images": [
+                "https://images.unsplash.com/photo-1631214524020-7e18db76a46f?w=600&h=600&fit=crop",
+                "https://images.unsplash.com/photo-1631214524115-6a2c86b0fc42?w=600&h=600&fit=crop",
+                "https://images.unsplash.com/photo-1631214523985-1e0a2756ce8f?w=600&h=600&fit=crop"
+            ],
+            "rating": 4.5,
+            "reviews": 123,
+            "description": "Base de maquillaje de larga duración con acabado mate. Perfecta para piel grasa.",
+            "fullDescription": "Nuestra Base Matte Aqua ha sido especialmente formulada para proporcionar una cobertura perfecta durante todo el día. Su fórmula libre de aceites controla el brillo y minimiza la apariencia de los poros, dejando un acabado mate natural.",
+            "badge": "+30",
+            "colors": [
+                {"name": "Porcelana", "hex": "#F5DEB3"},
+                {"name": "Natural", "hex": "#FFE4C4"},
+                {"name": "Beige", "hex": "#FFDAB9"},
+                {"name": "Caramelo", "hex": "#D2B48C"}
+            ],
+            "features": [
+                "Acabado mate de larga duración",
+                "Control de brillo hasta por 12 horas",
+                "Fórmula libre de aceites",
+                "No comedogénico",
+                "Protección solar SPF 15",
+                "Producto vegano y cruelty-free"
+            ],
+            "specifications": {
+                "Acabado": "Mate",
+                "Tipo de piel": "Grasa a mixta",
+                "Cobertura": "Media a completa",
+                "Duración": "12 horas",
+                "Contenido": "30ml"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Lip Gloss Wonder",
+            "category": "labios",
+            "price": 580,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300&h=300&fit=crop",
+            "rating": 5,
+            "reviews": 67,
+            "description": "Brillo labial de larga duración con acabado brillante.",
+            "badge": "+15",
+            "colors": [
+                {"name": "Rosa", "hex": "#FFB6C1"},
+                {"name": "Coral", "hex": "#FF69B4"},
+                {"name": "Natural", "hex": "#FFC0CB"}
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Highlighter Kaia Lov",
+            "category": "rostro",
+            "price": 450,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1617220379428-c7f2c5b89936?w=300&h=300&fit=crop",
+            "rating": 4,
+            "reviews": 89,
+            "description": "Iluminador en polvo con acabado brillante.",
+            "badge": "+4"
+        },
+        {
+            "id": 4,
+            "name": "Rímel Mega LashPRO",
+            "category": "ojos",
+            "price": 600,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1631214540553-a4e4e9a2d634?w=300&h=300&fit=crop",
+            "rating": 5,
+            "reviews": 156,
+            "description": "Máscara de pestañas voluminizadora waterproof."
+        },
+        {
+            "id": 5,
+            "name": "Brocha pequeña para ojos",
+            "category": "accesorios",
+            "price": 200,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1596690336390-150897b1a8b9?w=300&h=300&fit=crop",
+            "rating": 4.5,
+            "reviews": 30,
+            "description": "Brocha profesional para aplicación de sombras."
+        },
+        {
+            "id": 6,
+            "name": "Sombras tonos rosa",
+            "category": "ojos",
+            "price": 350,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=300&h=300&fit=crop",
+            "rating": 5,
+            "reviews": 45,
+            "description": "Paleta de sombras en tonos rosa y nude.",
+            "colors": [
+                {"name": "Rosa Claro", "hex": "#FFB6C1"},
+                {"name": "Rosa Medio", "hex": "#FFC0CB"},
+                {"name": "Rosa Oscuro", "hex": "#FFD1DC"}
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Serum de pestañas",
+            "category": "ojos",
+            "price": 250,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1631214540553-a4e4e9a2d634?w=300&h=300&fit=crop",
+            "rating": 4,
+            "reviews": 22,
+            "description": "Serum fortificante para pestañas más largas.",
+            "isNew": true
+        },
+        {
+            "id": 8,
+            "name": "Mascara LoveIt",
+            "category": "ojos",
+            "price": 365,
+            "originalPrice": null,
+            "discount": 0,
+            "image": "https://images.unsplash.com/photo-1631214540553-a4e4e9a2d634?w=300&h=300&fit=crop",
+            "rating": 4.8,
+            "reviews": 67,
+            "description": "Máscara de pestañas con efecto volumen."
+        },
+        {
+            "id": 9,
+            "name": "Labial Matte Aqua",
+            "category": "labios",
+            "price": 586,
+            "originalPrice": 650,
+            "discount": 10,
+            "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300&h=300&fit=crop",
+            "rating": 5,
+            "reviews": 89,
+            "description": "Labial mate de larga duración.",
+            "colors": [
+                {"name": "Rojo Clásico", "hex": "#DC143C"},
+                {"name": "Rosa Intenso", "hex": "#FF69B4"},
+                {"name": "Vino", "hex": "#C71585"},
+                {"name": "Cereza", "hex": "#8B0000"}
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Lip Gloss Aqua",
+            "category": "labios",
+            "price": 470,
+            "originalPrice": 510,
+            "discount": 8,
+            "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300&h=300&fit=crop",
+            "rating": 4.7,
+            "reviews": 56,
+            "description": "Brillo labial hidratante con vitamina E.",
+            "colors": [
+                {"name": "Rosa Suave", "hex": "#FFB6C1"},
+                {"name": "Rosa Brillante", "hex": "#FF69B4"},
+                {"name": "Natural", "hex": "#FFC0CB"}
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Polvos Matte Aqua",
+            "category": "rostro",
+            "price": 850,
+            "originalPrice": 980,
+            "discount": 13,
+            "image": "https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?w=300&h=300&fit=crop",
+            "rating": 4.3,
+            "reviews": 78,
+            "description": "Polvos compactos matificantes."
+        },
+        {
+            "id": 12,
+            "name": "Blush Coral",
+            "category": "rostro",
+            "price": 650,
+            "originalPrice": 870,
+            "discount": 25,
+            "image": "https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?w=300&h=300&fit=crop",
+            "rating": 4.6,
+            "reviews": 52,
+            "description": "Rubor en tono coral para un acabado natural y saludable."
+        }
+    ]
+}

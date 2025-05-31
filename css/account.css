@@ -1,0 +1,425 @@
+/* ========================================
+   KAIA MAKEUP - ESTILOS DE CUENTA
+   ======================================== */
+
+/* Página de cuenta */
+.account-page {
+    margin-top: 100px;
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    padding: 40px 0;
+}
+
+/* Header de la cuenta */
+.account-header {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.account-greeting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.account-greeting h1 {
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.account-greeting p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.logout-link {
+    color: var(--primary-pink);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.logout-link:hover {
+    color: #d67b86;
+}
+
+/* Navegación de cuenta */
+.account-nav {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 0;
+    overflow: hidden;
+}
+
+.account-nav-item {
+    display: block;
+    padding: 20px 30px;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.account-nav-item:last-child {
+    border-bottom: none;
+}
+
+.account-nav-item:hover {
+    background-color: var(--light-pink);
+    color: var(--primary-pink);
+    padding-left: 40px;
+}
+
+.account-nav-item.active {
+    background-color: var(--light-pink);
+    color: var(--primary-pink);
+    font-weight: 500;
+}
+
+.account-nav-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--primary-pink);
+}
+
+/* Contenido de la cuenta */
+.account-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Información personal */
+.personal-info-section h2 {
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.edit-info-btn {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.edit-info-btn:hover {
+    background-color: #d67b86;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(232, 145, 156, 0.4);
+}
+
+/* Formulario de edición */
+.edit-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-pink);
+    box-shadow: 0 0 0 3px rgba(232, 145, 156, 0.1);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+}
+
+.save-btn:hover {
+    background-color: #d67b86;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(232, 145, 156, 0.4);
+}
+
+.cancel-btn {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 1px solid #ddd;
+}
+
+.cancel-btn:hover {
+    background-color: var(--light-gray);
+}
+
+/* Direcciones */
+.addresses-section {
+    margin-top: 40px;
+}
+
+.address-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.address-card.default {
+    border-color: var(--primary-pink);
+}
+
+.default-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--primary-pink);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.address-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.address-actions button {
+    background: none;
+    border: none;
+    color: var(--primary-pink);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.address-actions button:hover {
+    color: #d67b86;
+}
+
+/* Historial de pedidos */
+.orders-section {
+    margin-top: 30px;
+}
+
+.order-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.order-number {
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.order-date {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.order-status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.order-status.delivered {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.order-status.processing {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.order-status.shipped {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.order-items {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-item-info {
+    flex: 1;
+}
+
+.order-item-name {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.order-item-quantity {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.order-total {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-pink);
+}
+
+/* Lista de deseos */
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.wishlist-item {
+    position: relative;
+}
+
+.wishlist-remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.wishlist-remove:hover {
+    background-color: var(--primary-pink);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .account-header {
+        padding: 20px;
+    }
+    
+    .account-greeting h1 {
+        font-size: 2rem;
+    }
+    
+    .account-content {
+        padding: 20px;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .save-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .wishlist-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

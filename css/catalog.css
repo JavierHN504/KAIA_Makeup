@@ -1,0 +1,459 @@
+/* ========================================
+   KAIA MAKEUP - ESTILOS DEL CATÁLOGO
+   ======================================== */
+
+/* Página del catálogo */
+.catalog-page {
+    margin-top: 100px;
+    min-height: 100vh;
+}
+
+/* Header del catálogo */
+.catalog-header {
+    background-color: var(--light-pink);
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalog-header h1 {
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.catalog-header p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* Categorías del catálogo */
+.catalog-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    background-color: transparent;
+    border: 2px solid var(--primary-pink);
+    color: var(--primary-pink);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-tab:hover,
+.category-tab.active {
+    background-color: var(--primary-pink);
+    color: white;
+}
+
+/* Sidebar de filtros */
+.catalog-filters {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.filter-group {
+    margin-bottom: 30px;
+}
+
+.filter-group h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.filter-group input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: var(--primary-pink);
+}
+
+.filter-group input[type="range"] {
+    width: 100%;
+    accent-color: var(--primary-pink);
+}
+
+.price-range {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+
+/* Star rating filter */
+.star-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.star-filter:hover {
+    opacity: 0.7;
+}
+
+.star-filter .stars {
+    color: var(--accent-yellow);
+    font-size: 0.9rem;
+}
+
+.star-filter .count {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+/* Grid de productos */
+.catalog-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Producto individual en catálogo */
+.catalog-product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.catalog-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.catalog-product-card:hover .product-image-container img {
+    transform: scale(1.05);
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.catalog-product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.quick-view-btn {
+    background-color: white;
+    color: var(--dark-gray);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quick-view-btn:hover {
+    background-color: var(--primary-pink);
+    color: white;
+}
+
+/* Información del producto */
+.catalog-product-info {
+    padding: 20px;
+}
+
+.catalog-product-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.catalog-product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    color: var(--primary-pink);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.original-price {
+    color: var(--text-light);
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.product-colors {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.color-option {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.color-option:hover {
+    border-color: var(--primary-pink);
+    transform: scale(1.1);
+}
+
+.color-option.selected {
+    border-color: var(--primary-pink);
+}
+
+.add-to-cart-btn {
+    background-color: var(--primary-pink);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d67b86;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(232, 145, 156, 0.4);
+}
+
+/* Descuentos y badges */
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--primary-pink);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent-purple);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+/* Controles de ordenamiento */
+.catalog-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.results-count {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-controls select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Paginación */
+.catalog-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.pagination-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: var(--text-dark);
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: var(--primary-pink);
+    color: white;
+    border-color: var(--primary-pink);
+}
+
+.pagination-btn.active {
+    background-color: var(--primary-pink);
+    color: white;
+    border-color: var(--primary-pink);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Vista de lista */
+.list-view .catalog-products {
+    grid-template-columns: 1fr;
+}
+
+.list-view .catalog-product-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-view .product-image-container {
+    width: 200px;
+    height: 200px;
+}
+
+.list-view .catalog-product-info {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Modal de vista rápida */
+.quick-view-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.quick-view-modal.show {
+    display: flex;
+}
+
+.quick-view-content {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .catalog-header h1 {
+        font-size: 2rem;
+    }
+    
+    .catalog-products {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .product-image-container {
+        height: 200px;
+    }
+    
+    .catalog-product-info {
+        padding: 15px;
+    }
+    
+    .catalog-product-name {
+        font-size: 0.9rem;
+    }
+    
+    .current-price {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-categories {
+        gap: 10px;
+    }
+    
+    .category-tab {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
