@@ -256,7 +256,7 @@ function generateBestSellers() {
             id: 1,
             name: 'Base Matte Aqua',
             price: 1200,
-            image: 'https://images.unsplash.com/photo-1631214524020-7e18db76a46f?w=300&h=300&fit=crop',
+            image: 'https://picsum.photos/id/238/200/300',
             badge: '+30',
             rating: 4.5
         },
@@ -264,7 +264,7 @@ function generateBestSellers() {
             id: 2,
             name: 'Lip Gloss Wonder',
             price: 580,
-            image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300&h=300&fit=crop',
+            image: 'https://picsum.photos/id/237/200/300',
             badge: '+15',
             rating: 5
         },
@@ -272,7 +272,7 @@ function generateBestSellers() {
             id: 3,
             name: 'Highlighter Kaia Lov',
             price: 450,
-            image: 'https://images.unsplash.com/photo-1617220379428-c7f2c5b89936?w=300&h=300&fit=crop',
+            image: 'https://picsum.photos/id/200/200/300',
             badge: '+4',
             rating: 4
         },
@@ -280,11 +280,11 @@ function generateBestSellers() {
             id: 4,
             name: 'Rímel Mega LashPRO',
             price: 600,
-            image: 'https://images.unsplash.com/photo-1631214540553-a4e4e9a2d634?w=300&h=300&fit=crop',
+            image: 'https://picsum.photos/id/100/200/300',
             rating: 5
         }
     ];
-    
+
     return products.map(product => `
         <div class="col-6 col-md-3">
             <div class="product-card" onclick="loadPage('product', {id: ${product.id}})">
@@ -301,6 +301,8 @@ function generateBestSellers() {
         </div>
     `).join('');
 }
+
+
 
 // Generar estrellas de rating
 function generateStars(rating) {
