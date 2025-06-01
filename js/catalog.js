@@ -161,12 +161,6 @@ function loadCatalogPage(params = {}) {
                                 <i class="bi bi-chevron-right"></i>
                             </button>
                         </div>
-                        
-                        <div class="text-center mt-4">
-                            <button class="btn btn-ver-mas" onclick="loadMoreProducts()">
-                                Mostrar más productos
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>

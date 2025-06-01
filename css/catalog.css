@@ -457,3 +457,11 @@
         font-size: 0.9rem;
     }
 }
+
+.catalog-products {
+    margin-bottom: 100px;
+}
+
+.catalog-pagination {
+    margin-bottom: 80px;
+}
