@@ -215,7 +215,7 @@ function loadHomePage() {
                 <h2 class="section-title">USO DE PRODUCTO</h2>
                 <div class="features-grid">
                     <div class="feature-item">
-                        <i class="bi bi-leaf"></i>
+                        <i class="bi bi-tree"></i>
                         <p>Producto Vegano</p>
                     </div>
                     <div class="feature-item">
@@ -247,6 +247,7 @@ function loadHomePage() {
     
     // Re-establecer event listeners para los elementos nuevos
     setupHomeEventListeners();
+
 }
 
 // Generar productos más vendidos
@@ -269,7 +270,7 @@ function generateBestSellers() {
             rating: 5
         },
         {
-            id: 3,
+            id: 3,  
             name: 'Highlighter Kaia Lov',
             price: 450,
             image: 'https://caiacosmetics.com/img/bilder/artiklar/zoom/CAI2681_1.jpg?m=1748440246&w=741',
