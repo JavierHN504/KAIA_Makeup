@@ -256,7 +256,7 @@ function generateBestSellers() {
             id: 1,
             name: 'Base Matte Aqua',
             price: 1200,
-            image: 'https://picsum.photos/id/238/200/300',
+            image: 'https://aquavera.shop/cdn/shop/files/avbm3-durazno-235indi.png?v=1699561497',
             badge: '+30',
             rating: 4.5
         },
@@ -264,7 +264,7 @@ function generateBestSellers() {
             id: 2,
             name: 'Lip Gloss Wonder',
             price: 580,
-            image: 'https://picsum.photos/id/237/200/300',
+            image: 'https://wonderskin.com/cdn/shop/files/ProductPage-RedTopGloss1.jpg?v=1731316046',
             badge: '+15',
             rating: 5
         },
@@ -272,7 +272,7 @@ function generateBestSellers() {
             id: 3,
             name: 'Highlighter Kaia Lov',
             price: 450,
-            image: 'https://picsum.photos/id/200/200/300',
+            image: 'https://caiacosmetics.com/img/bilder/artiklar/zoom/CAI2681_1.jpg?m=1748440246&w=741',
             badge: '+4',
             rating: 4
         },
@@ -280,7 +280,7 @@ function generateBestSellers() {
             id: 4,
             name: 'Rímel Mega LashPRO',
             price: 600,
-            image: 'https://picsum.photos/id/100/200/300',
+            image: 'https://www.techniccosmetics.com/cdn/shop/files/28545megalashopen-WC.jpg?v=1717060828',
             rating: 5
         }
     ];

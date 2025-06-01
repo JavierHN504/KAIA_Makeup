@@ -219,14 +219,13 @@ function generateCatalogProducts() {
 
 // Obtener productos del catálogo (simulado)
 function getCatalogProducts() {
-    // En una aplicación real, esto vendría de una API
     const allProducts = [
         {
             id: 5,
             name: 'Brocha pequeña para ojos',
             category: 'ojos',
             currentPrice: 200,
-            image: 'https://images.unsplash.com/photo-1596690336390-150897b1a8b9?w=300&h=300&fit=crop',
+            image: 'https://petrizzio.cl/cdn/shop/products/set-brochas-ojos-pzzo-947144.png?v=1647014822',
             rating: 4.5,
             reviews: 30
         },
@@ -235,7 +234,7 @@ function getCatalogProducts() {
             name: 'Sombras tonos rosa',
             category: 'ojos',
             currentPrice: 350,
-            image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=300&h=300&fit=crop',
+            image: 'https://www.collarela.com/cdn/shop/files/SOMBRACOLORROSATRENDY02_1200x1200.jpg?v=1710169794',
             rating: 5,
             reviews: 45,
             colors: ['#FFB6C1', '#FFC0CB', '#FFD1DC']
@@ -245,7 +244,7 @@ function getCatalogProducts() {
             name: 'Serum de pestañas',
             category: 'ojos',
             currentPrice: 250,
-            image: 'https://images.unsplash.com/photo-1631214540553-a4e4e9a2d634?w=300&h=300&fit=crop',
+            image: 'https://beautyface.hn/cdn/shop/products/LASHLASH.jpg?v=1624342156',
             rating: 4,
             reviews: 22,
             isNew: true
@@ -255,7 +254,7 @@ function getCatalogProducts() {
             name: 'Mascara LoveIt',
             category: 'ojos',
             currentPrice: 365,
-            image: 'https://images.unsplash.com/photo-1631214540553-a4e4e9a2d634?w=300&h=300&fit=crop',
+            image: 'https://xoxo-eg.com/cdn/shop/files/Essence-Love-It-A-Choco-Lot-Lash-Without-Limits-Br-0_533x.jpg?v=1736200755',
             rating: 4.8,
             reviews: 67
         },
@@ -266,7 +265,7 @@ function getCatalogProducts() {
             currentPrice: 586,
             originalPrice: 650,
             discount: 10,
-            image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300&h=300&fit=crop',
+            image: 'https://m.media-amazon.com/images/I/517yqFWkDFL.jpg',
             rating: 5,
             reviews: 89,
             colors: ['#DC143C', '#FF69B4', '#C71585', '#8B0000']
@@ -278,10 +277,10 @@ function getCatalogProducts() {
             currentPrice: 470,
             originalPrice: 510,
             discount: 8,
-            image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300&h=300&fit=crop',
+            image: 'https://d1flfk77wl2xk4.cloudfront.net/Assets/07/930/XXL_p0208693007.jpg',
             rating: 4.7,
             reviews: 56,
-            colors: ['#FFB6C1', '#FF69B4', '#FFC0CB']
+            colors: ['#FF0000','#FFB6C1', '#FF69B4', '#FFC0CB']
         },
         {
             id: 11,
@@ -290,7 +289,7 @@ function getCatalogProducts() {
             currentPrice: 980,
             originalPrice: 1200,
             discount: 18,
-            image: 'https://images.unsplash.com/photo-1631214524020-7e18db76a46f?w=300&h=300&fit=crop',
+            image: 'https://aquavera.shop/cdn/shop/files/avbm3-durazno-235indi.png?v=1699561497',
             rating: 4.5,
             reviews: 123,
             colors: ['#F5DEB3', '#FFE4C4', '#FFDAB9', '#D2B48C']
@@ -302,9 +301,41 @@ function getCatalogProducts() {
             currentPrice: 850,
             originalPrice: 980,
             discount: 13,
-            image: 'https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?w=300&h=300&fit=crop',
+            image: 'https://agarabenidorm.com/wp-content/uploads/2023/06/802575-1.jpg',
             rating: 4.3,
             reviews: 78
+        },
+
+        {
+    id: 13,
+    name: 'Highlighter Kaia Lov',
+    category: 'rostro',
+    currentPrice: 450,
+    image: 'https://caiacosmetics.com/img/bilder/artiklar/zoom/CAI2681_1.jpg?m=1748440246&w=741',
+    rating: 4,
+    reviews: 33,
+    discount: 4,
+    colors: ['#FFEBCD', '#FFF8DC', '#FFD700']
+        },
+        {
+    id: 14,
+    name: 'Lip Gloss Wonder',
+    category: 'labios',
+    currentPrice: 580,
+    image: 'https://wonderskin.com/cdn/shop/files/ProductPage-RedTopGloss1.jpg?v=1731316046',
+    rating: 5,
+    reviews: 61,
+    discount: 15,
+    colors: ['#FF0000','#FF69B4', '#FF1493']
+        },
+        {
+    id: 15,
+    name: 'Rímel Mega LashPRO',
+    category: 'ojos',
+    currentPrice: 600,
+    image: 'https://www.techniccosmetics.com/cdn/shop/files/28545megalashopen-WC.jpg?v=1717060828',
+    rating: 5,
+    reviews: 74
         }
     ];
     
@@ -333,7 +364,7 @@ function getCatalogProducts() {
             break;
     }
     
-    return filteredProducts;
+    return allProducts;
 }
 
 // Filtrar por categoría
