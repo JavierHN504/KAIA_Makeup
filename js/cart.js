@@ -2,35 +2,6 @@
 // KAIA MAKEUP - FUNCIONES DEL CARRITO
 // ========================================
 
-// Agregar producto al carrito
-function addToCart(productId, quantity = 1) {
-    // Obtener información del producto
-    const product = getProductById(productId);
-    if (!product) return;
-    
-    // Verificar si el producto ya está en el carrito
-    const existingItem = AppState.cart.find(item => item.id === productId);
-    
-    if (existingItem) {
-        existingItem.quantity += quantity;
-    } else {
-        AppState.cart.push({
-            id: productId,
-            name: product.name,
-            price: product.price,
-            image: product.image,
-            quantity: quantity
-        });
-    }
-    
-    // Guardar y actualizar UI
-    saveCartToStorage();
-    updateCartCount();
-    
-    // Mostrar notificación
-    showNotification(`✓ ${product.name} agregado al carrito`, 'success');
-}
-
 // Remover producto del carrito
 function removeFromCart(productId) {
     AppState.cart = AppState.cart.filter(item => item.id !== productId);
@@ -65,7 +36,7 @@ function updateCartQuantity(productId, quantity) {
 // Cargar página del carrito
 function loadCartPage() {
     const mainContent = document.getElementById('mainContent');
-    
+
     if (AppState.cart.length === 0) {
         mainContent.innerHTML = `
             <div class="cart-page">
@@ -83,69 +54,54 @@ function loadCartPage() {
         `;
         return;
     }
-    
-    mainContent.innerHTML = `
+
+    // Si hay productos en el carrito
+    let cartHTML = `
         <div class="cart-page">
             <div class="container">
-                <div class="cart-header">
-                    <h1>Resumen de Carrito</h1>
-                    <p>${AppState.cart.length} producto${AppState.cart.length > 1 ? 's' : ''} en tu carrito</p>
+                <h2>Mi Carrito</h2>
+                <div class="cart-items">
+    `;
+
+    let total = 0;
+
+    AppState.cart.forEach((item, index) => {
+        total += item.price;
+
+        cartHTML += `
+            <div class="cart-item">
+                <div class="item-info">
+                    <img src="${item.image}" alt="${item.name}" class="item-img" />
+                    <div>
+                        <h4>${item.name}</h4>
+                        <p>Lps. ${item.price}</p>
+                    </div>
                 </div>
-                
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="cart-container">
-                            <table class="cart-table">
-                                <thead>
-                                    <tr>
-                                        <th>Producto</th>
-                                        <th>Cantidad</th>
-                                        <th>Total</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody id="cartItems">
-                                    ${generateCartItems()}
-                                </tbody>
-                            </table>
-                            
-                            <div class="cart-actions">
-                                <a href="#" class="continue-shopping" onclick="loadPage('catalog'); return false;">
-                                    <i class="bi bi-arrow-left"></i> Seguir comprando
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="cart-summary">
-                            <h3>Resumen del pedido</h3>
-                            
-                            <div class="discount-code">
-                                <h4>Código de descuento</h4>
-                                <form class="discount-form" onsubmit="applyDiscount(event)">
-                                    <input type="text" placeholder="Código" id="discountCode">
-                                    <button type="submit">Aplicar</button>
-                                </form>
-                            </div>
-                            
-                            <div id="cartSummary">
-                                ${generateCartSummary()}
-                            </div>
-                            
-                            <button class="checkout-btn" onclick="loadPage('checkout')">
-                                Ir al checkout <i class="bi bi-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
+                <button class="btn-remove" onclick="removeFromCart(${index})">Eliminar</button>
+            </div>
+        `;
+    });
+
+    cartHTML += `
+                </div>
+                <div class="cart-summary">
+                    <h3>Total: Lps. ${total}</h3>
+                    <button class="btn btn-primary">Finalizar compra</button>
                 </div>
             </div>
         </div>
     `;
-    
-    // Agregar event listeners
-    setupCartEventListeners();
+
+    mainContent.innerHTML = cartHTML;
 }
+
+function removeFromCart(index) {
+    AppState.cart.splice(index, 1);
+    saveCartToStorage();
+    loadCartPage(); // Recargar vista
+    updateCartCounter(); // Actualizar numerito
+}
+
 
 // Generar items del carrito
 function generateCartItems() {
@@ -308,3 +264,6 @@ function getProductById(id) {
     
     return products.find(p => p.id === id);
 }
+
+// Hacer accesibles las funciones desde otros archivos
+window.loadCartPage = loadCartPage;

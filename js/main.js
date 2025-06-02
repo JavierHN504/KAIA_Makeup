@@ -11,12 +11,18 @@ const AppState = {
 };
 
 // Inicialización cuando el DOM está listo
-document.addEventListener('DOMContentLoaded', function() {
-    initializeApp();
+window.addEventListener('load', function() {
     loadCartFromStorage();
     setupEventListeners();
     setupScrollEffects();
+    
+    // Asegurarse de que todas las funciones estén disponibles
+    setTimeout(() => {
+        initializeApp();
+    }, 0);
 });
+
+
 
 // Inicializar la aplicación
 function initializeApp() {
@@ -354,6 +360,31 @@ function handleNewsletterSubmit(e) {
 // UTILIDADES
 // ========================================
 
+// Añadir producto al carrito
+function addToCart(productId, quantity = 1) {
+    const product = getProductById(productId); // asegurate que esta función existe
+
+    if (!product) return;
+
+    const existing = AppState.cart.find(item => item.id === productId);
+
+    if (existing) {
+        existing.quantity += quantity;
+    } else {
+        AppState.cart.push({
+            id: productId,
+            name: product.name,
+            price: product.price || product.currentPrice,
+            quantity: quantity,
+            image: product.image || product.images?.[0]
+        });
+    }
+
+    saveCartToStorage();
+    updateCartCount();
+    showNotification('✓ Producto agregado al carrito', 'success');
+}
+
 // Mostrar notificaciones
 function showNotification(message, type = 'info') {
     const toastHTML = `
@@ -404,7 +435,8 @@ function updateCartCount() {
 }
 
 // Manejar cambios en el historial
-window.addEventListener('popstate', function(e) {
+// Escuchar cambios de hash para SPA
+window.addEventListener('hashchange', function() {
     const hash = window.location.hash.substring(1);
     if (hash) {
         loadPage(hash);
@@ -412,3 +444,13 @@ window.addEventListener('popstate', function(e) {
         loadPage('home');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cartIcon = document.getElementById('cart');
+    if (cartIcon) {
+        cartIcon.addEventListener('click', function () {
+            loadPage('cart');
+        });
+    }
+});
+

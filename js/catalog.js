@@ -467,3 +467,8 @@ function previousPage() {
 function nextPage() {
     // Implementar navegación
 }
+
+function getProductById(productId) {
+    const allProducts = getCatalogProducts();
+    return allProducts.find(p => p.id === productId);
+}
