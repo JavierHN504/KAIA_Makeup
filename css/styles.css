@@ -663,6 +663,35 @@ footer {
     object-fit: contain;
 }
 
+.brand-banner {
+    background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1600&h=800&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-banner-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-banner-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+
 
 
 
