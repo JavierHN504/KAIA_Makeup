@@ -530,7 +530,7 @@ function loadAboutPage() {
                         </div>
                         <div class="col-md-3 text-center mb-4">
                             <div class="value-icon mb-3">
-                                <i class="bi bi-leaf" style="font-size: 3rem; color: var(--primary-pink);"></i>
+                                <i class="bi bi-tree" style="font-size: 3rem; color: var(--primary-pink);"></i>
                             </div>
                             <h4>Sostenibilidad</h4>
                             <p>Compromiso con el medio ambiente</p>
