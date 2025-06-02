@@ -66,21 +66,29 @@ function loadCartPage() {
     let total = 0;
 
     AppState.cart.forEach((item, index) => {
-        total += item.price;
+    const quantity = item.quantity || 1;
+    const itemTotal = item.price * quantity;
+    total += itemTotal;
 
-        cartHTML += `
-            <div class="cart-item">
-                <div class="item-info">
-                    <img src="${item.image}" alt="${item.name}" class="item-img" />
-                    <div>
-                        <h4>${item.name}</h4>
-                        <p>Lps. ${item.price}</p>
-                    </div>
+    cartHTML += `
+        <div class="cart-item">
+            <div class="item-info">
+                <img src="${item.image}" alt="${item.name}" class="item-img" />
+                <div>
+                    <h4>${item.name}</h4>
+                    <p>Lps. ${item.price}</p>
                 </div>
-                <button class="btn-remove" onclick="removeFromCart(${index})">Eliminar</button>
             </div>
-        `;
-    });
+            <div class="quantity-controls">
+                <button onclick="changeQuantity(${item.id}, -1)">-</button>
+                <span>${item.quantity}</span>
+                <button onclick="changeQuantity(${item.id}, 1)">+</button>
+            </div>
+            <button class="btn-remove" onclick="removeFromCart(${index})">Eliminar</button>
+        </div>
+    `;
+});
+
 
     cartHTML += `
                 </div>
@@ -264,6 +272,20 @@ function getProductById(id) {
     
     return products.find(p => p.id === id);
 }
+
+function changeQuantity(productId, change) {
+    const item = AppState.cart.find(p => p.id === productId);
+    if (!item) return;
+
+    const newQty = (item.quantity || 1) + change;
+    if (newQty < 1) return;
+
+    item.quantity = newQty;
+    saveCartToStorage();
+    loadCartPage();
+    updateCartCounter();
+}
+
 
 // Hacer accesibles las funciones desde otros archivos
 window.loadCartPage = loadCartPage;

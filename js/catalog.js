@@ -472,3 +472,25 @@ function getProductById(productId) {
     const allProducts = getCatalogProducts();
     return allProducts.find(p => p.id === productId);
 }
+
+function addToCart(productId) {
+    const product = getProductById(productId);
+    if (!product) return;
+
+    // Revisar si ya está en el carrito
+    const existingItem = AppState.cart.find(item => item.id === product.id);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        product.quantity = 1;
+        AppState.cart.push(product);
+    }
+
+    saveCartToStorage();
+    updateCartCounter(); // actualiza el número del carrito
+    showNotification(`${product.name} agregado al carrito`, 'success');
+}
+
+window.addToCart = addToCart;
+

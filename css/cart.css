@@ -457,3 +457,26 @@
 .cart-summary .btn-primary:hover {
     background-color: #d64b4b;
 }
+
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.quantity-controls button {
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-controls span {
+    min-width: 20px;
+    text-align: center;
+}
