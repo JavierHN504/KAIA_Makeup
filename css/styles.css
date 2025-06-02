@@ -9,7 +9,7 @@
     --light-pink: #FDEEF0;
     --dark-gray: #2C2C2C;
     --light-gray: #F5F5F5;
-    --accent-yellow: #F9E4B7;
+    --accent-yellow: #ffffff;
     --accent-purple: #C4A5D9;
     --white: #FFFFFF;
     --text-dark: #333333;
@@ -336,8 +336,8 @@ h1, h2, h3, h4, h5, h6 {
    BOTONES
    ======================================== */
 .btn-ver-mas {
-    background-color: transparent;
-    color: var(--primary-pink);
+    background-color: var(--primary-pink);
+    color: white;
     border: 2px solid var(--primary-pink);
     padding: 12px 40px;
     border-radius: 30px;
@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
+
 
 .btn-ver-mas:hover {
     background-color: var(--primary-pink);
@@ -592,6 +593,25 @@ footer {
 .social-item i {
     font-size: 1.2rem;
 }
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    margin-bottom: 20px; 
+}
+
+.footer-copy {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
 
 /* ========================================
    RESPONSIVE

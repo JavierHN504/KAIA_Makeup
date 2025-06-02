@@ -591,7 +591,7 @@ function loadAboutPage() {
             <section class="about-cta py-5 text-center" style="background-color: var(--accent-yellow);">
                 <div class="container">
                     <h3 class="mb-4">Maquillaje es arte. Belleza es Kaia.</h3>
-                    <button class="btn btn-primary btn-lg" onclick="loadPage('catalog')">
+                    <button class="btn-ver-mas" onclick="loadPage('catalog')">
                         DESCUBRE NUESTROS PRODUCTOS
                     </button>
                 </div>
