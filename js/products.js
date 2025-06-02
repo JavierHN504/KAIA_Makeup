@@ -559,33 +559,30 @@ function loadAboutPage() {
                     <h2 class="section-title text-center mb-5">Nuestro equipo</h2>
                     <div class="row">
                         <div class="col-md-3 text-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop" 
-                                 alt="Stefi Chávez" class="rounded-circle mb-3">
+                            <img src="./img/workTeam/Stefi.png" alt="Stefi Chávez" class="rounded-circle mb-3" width="160" height="160">
                             <h5>Stefi Chávez</h5>
                             <p class="text-muted">Directora general y directora de logística</p>
                             <p><small>Producto favorito: Base Matte Aqua</small></p>
                         </div>
                         <div class="col-md-3 text-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&h=200&fit=crop" 
-                                 alt="Nathalie Pagoaga" class="rounded-circle mb-3">
+                            <img src="./img/workTeam/Nathalie.png" alt="Nathalie Pagoaga" class="rounded-circle mb-3" width="160" height="160">
                             <h5>Nathalie Pagoaga</h5>
                             <p class="text-muted">Directora creativa</p>
                             <p><small>Producto favorito: Lip Gloss Wonder</small></p>
                         </div>
                         <div class="col-md-3 text-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=200&h=200&fit=crop" 
-                                 alt="Sofía Ochoa" class="rounded-circle mb-3">
+                            <img src="./img/workTeam/Sofía.png" alt="Sofía Ochoa" class="rounded-circle mb-3" width="160" height="160">
                             <h5>Sofía Ochoa</h5>
                             <p class="text-muted">Directora de arte</p>
                             <p><small>Producto favorito: Highlighter Kaia Lover</small></p>
                         </div>
                         <div class="col-md-3 text-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200&h=200&fit=crop" 
-                                 alt="Carmen Servellón" class="rounded-circle mb-3">
+                            <img src="./img/workTeam/Carmen.png" alt="Carmen Servellón" class="rounded-circle mb-3" width="160" height="160">
                             <h5>Carmen Servellón</h5>
                             <p class="text-muted">Directora de ventas</p>
                             <p><small>Producto favorito: Rímel Mega Lash PRO</small></p>
                         </div>
+
                     </div>
                 </div>
             </section>
