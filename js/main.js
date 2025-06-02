@@ -313,7 +313,7 @@ function generateStars(rating) {
     for (let i = 1; i <= 5; i++) {
         if (i <= Math.floor(rating)) {
             stars += '<i class="bi bi-star-fill"></i>';
-        } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
+        } else if (i - rating < 1) {
             stars += '<i class="bi bi-star-half"></i>';
         } else {
             stars += '<i class="bi bi-star"></i>';
@@ -321,6 +321,7 @@ function generateStars(rating) {
     }
     return stars;
 }
+
 
 // Configurar event listeners para home
 function setupHomeEventListeners() {

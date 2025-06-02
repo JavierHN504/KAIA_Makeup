@@ -691,6 +691,16 @@ footer {
     letter-spacing: 0.3rem;
 }
 
+.rating i {
+  font-size: 16px;
+  color: #f8e787; /* amarillo para las estrellas */
+  margin-right: 2px;
+}
+
+.stars i {
+  color: #f8e787;
+  font-size: 16px;
+}
 
 
 

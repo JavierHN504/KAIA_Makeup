@@ -92,20 +92,40 @@ function loadCatalogPage(params = {}) {
                             
                             <!-- Puntuación -->
                             <div class="filter-group">
-                                <h4>Puntuación</h4>
-                                <div class="star-filter" onclick="filterByRating(4)">
-                                    <span class="stars">★★★★☆</span>
-                                    <span class="count">& up (203)</span>
-                                </div>
-                                <div class="star-filter" onclick="filterByRating(3)">
-                                    <span class="stars">★★★☆☆</span>
-                                    <span class="count">& up (152)</span>
-                                </div>
-                                <div class="star-filter" onclick="filterByRating(2)">
-                                    <span class="stars">★★☆☆☆</span>
-                                    <span class="count">& up (100)</span>
-                                </div>
+                            <h4>Puntuación</h4>
+
+                            <div class="star-filter" onclick="filterByRating(4)">
+                                <span class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                </span>
                             </div>
+
+                            <div class="star-filter" onclick="filterByRating(3)">
+                                <span class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                </span>
+                            </div>
+
+                            <div class="star-filter" onclick="filterByRating(2)">
+                                <span class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                </span>
+                            </div>
+                            </div>
+
+
                             
                             <!-- Acabado -->
                             <div class="filter-group">
