@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
    ======================================== */
 .newsletter-section {
     padding: 60px 0;
-    background-color: var(--accent-yellow);
+    background-color: #f5e6eb;
 }
 
 .newsletter-content {
@@ -630,11 +630,19 @@ footer {
 
 .logo-img {
     height: auto;
-    width: clamp(80px, 15vw, 120px); /* ahora sí se ve masiso */
+    width: clamp(80px, 15vw, 120px);
     object-fit: contain;
     display: block;
     border-radius: 13px;
 }
+
+.logo-img-footer {
+    width: 100px;
+    height: auto;
+    border-radius: 13px;
+    object-fit: contain;
+}
+
 
 
 
