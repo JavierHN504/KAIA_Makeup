@@ -628,3 +628,16 @@ footer {
     object-fit: cover;
 }
 
+.logo-img {
+    height: auto;
+    width: clamp(80px, 15vw, 120px); /* ahora sí se ve masiso */
+    object-fit: contain;
+    display: block;
+    border-radius: 13px;
+}
+
+
+
+
+
+
