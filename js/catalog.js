@@ -321,36 +321,49 @@ function getCatalogProducts() {
         },
 
         {
-        id: 13,
-        name: 'Highlighter Kaia Lov',
-        category: 'rostro',
-        currentPrice: 450,
-        image: 'https://caiacosmetics.com/img/bilder/artiklar/zoom/CAI2681_1.jpg?m=1748440246&w=741',
-        rating: 4,
-        reviews: 33,
-        discount: 4,
-        colors: ['#FFEBCD', '#FFF8DC', '#FFD700']
-            },
-            {
-        id: 14,
-        name: 'Lip Gloss Wonder',
-        category: 'labios',
-        currentPrice: 580,
-        image: 'https://wonderskin.com/cdn/shop/files/ProductPage-RedTopGloss1.jpg?v=1731316046',
-        rating: 5,
-        reviews: 61,
-        discount: 15,
-        colors: ['#FF0000','#FF69B4', '#FF1493']
-            },
-            {
-        id: 15,
-        name: 'Rímel Mega LashPRO',
-        category: 'ojos',
-        currentPrice: 600,
-        image: 'https://www.techniccosmetics.com/cdn/shop/files/28545megalashopen-WC.jpg?v=1717060828',
-        rating: 5,
-        reviews: 74
-            }
+            id: 13,
+            name: 'Highlighter Kaia Lov',
+            category: 'rostro',
+            currentPrice: 450,
+            image: 'https://caiacosmetics.com/img/bilder/artiklar/zoom/CAI2681_1.jpg?m=1748440246&w=741',
+            rating: 4,
+            reviews: 33,
+            discount: 4,
+            colors: ['#FFEBCD', '#FFF8DC', '#FFD700']
+        },
+        {
+            id: 14,
+            name: 'Lip Gloss Wonder',
+            category: 'labios',
+            currentPrice: 580,
+            image: 'https://wonderskin.com/cdn/shop/files/ProductPage-RedTopGloss1.jpg?v=1731316046',
+            rating: 5,
+            reviews: 61,
+            discount: 15,
+            colors: ['#FF0000','#FF69B4', '#FF1493']
+        },
+        {
+            id: 15,
+            name: 'Rímel Mega LashPRO',
+            category: 'ojos',
+            currentPrice: 600,
+            image: 'https://www.techniccosmetics.com/cdn/shop/files/28545megalashopen-WC.jpg?v=1717060828',
+            rating: 5,
+            reviews: 74
+        },
+
+        {
+            id: 16,
+            name: 'Rubor Natural Bloom',
+            category: 'rostro',
+            currentPrice: 320,
+            originalPrice: 400,
+            discount: 20,
+            image: 'https://m.media-amazon.com/images/I/51-U8bl1SeL.jpg',
+            rating: 4.8,
+            reviews: 87
+        }
+
     ];
     
     // Filtrar por categoría

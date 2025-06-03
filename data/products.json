@@ -195,6 +195,19 @@
             "rating": 4.6,
             "reviews": 52,
             "description": "Rubor en tono coral para un acabado natural y saludable."
+        },
+
+        {
+            "id": 16,
+            "name": "Rubor Natural Bloom",
+            "category": "rostro",
+            "price": 320,
+            "originalPrice": 400,
+            "discount": 20,
+            "image": "https://images.unsplash.com/photo-1620781481900-b536f0f0f1ed?w=300&h=300&fit=crop",
+            "rating": 4.8,
+            "reviews": 87,
+            "description": "Rubor compacto con acabado suave y natural."
         }
     ]
 }
