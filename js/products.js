@@ -490,31 +490,31 @@ function loadAboutPage() {
                 </div>
             </section>
             
-            <!-- Misión y Visión -->
+                        <!-- Misión y Visión -->
             <section class="mission-vision py-5" style="background-color: var(--light-gray);">
                 <div class="container">
                     <div class="row">
+                        <!-- Misión -->
                         <div class="col-md-6 mb-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body p-5">
-                                    <h3 class="card-title mb-4">Misión</h3>
-                                    <p>Empoderar a mujeres a sentirse la mejor versión de sí mismas a través de productos de belleza de alta calidad, veganos, libres de crueldad animal y adecuados para todo tipo de piel.</p>
-                                    <p>En Kaia, nos comprometemos a ofrecer una experiencia segura, confiable y alineada con los estándares internacionales, cuidando tanto la piel como la autenticidad de cada mujer.</p>
-                                </div>
+                            <div class="about-card">
+                                <h3 class="fw-bold">Misión</h3>
+                                <p>Empoderar a mujeres a sentirse la mejor versión de sí mismas a través de productos de belleza de alta calidad, veganos, libres de crueldad animal y adecuados para todo tipo de piel.</p>
+                                <p>En Kaia, nos comprometemos a ofrecer una experiencia segura, confiable y alineada con los estándares internacionales, cuidando tanto la piel como la autenticidad de cada mujer.</p>
                             </div>
                         </div>
+
+                        <!-- Visión -->
                         <div class="col-md-6 mb-4">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body p-5">
-                                    <h3 class="card-title mb-4">Visión</h3>
-                                    <p>Convertirnos en una marca de referencia en el mundo del maquillaje en Honduras, con presencia tanto en línea como en puntos físicos.</p>
-                                    <p>Queremos expandirnos a través de al menos dos sucursales en Tegucigalpa y San Pedro Sula, y consolidarnos como una marca de belleza consciente, innovadora y cercana a las mujeres hondureñas.</p>
-                                </div>
+                            <div class="about-card">
+                                <h3 class="fw-bold">Visión</h3>
+                                <p>Convertirnos en una marca de referencia en el mundo del maquillaje en Honduras, con presencia tanto en línea como en puntos físicos.</p>
+                                <p>Queremos expandirnos a través de al menos dos sucursales en Tegucigalpa y San Pedro Sula, y consolidarnos como una marca de belleza consciente, innovadora y cercana a las mujeres hondureñas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             
             <!-- Valores -->
             <section class="values py-5">
